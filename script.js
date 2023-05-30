@@ -1,4 +1,5 @@
-const apiKey = process.env.API_KEY;
+// const apiKey = process.env.API_KEY;
+const apiKey = "40d17ecc48a627df54760b7c5f3649b1";
 const weatherIcon = document.querySelector(".weather-icon");
 
 const getLocation = () => {
@@ -30,6 +31,5 @@ const fetchWeather = async () => {
     let weatherDesc = data.weather[0].main.toLowerCase();
     weatherIcon.src = `images/${weatherDesc}.png`;
 }
-
 
 
